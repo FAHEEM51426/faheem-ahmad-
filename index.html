@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAHEEM AHMAD | _fxheem_</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 28px;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        .typing {
+            font-size: 22px;
+            margin-top: 100px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #00ff00;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00ff00;
+            color: black;
+        }
+
+        footer {
+            padding: 20px;
+            border-top: 1px solid #00ff00;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    FAHEEM AHMAD | _ƒxheem_
+</header>
+
+<div class="typing" id="typing"></div>
+
+<section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am faheem.</p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <p>onnulla</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: faheem.fiju@gmail.com</p>
+        <button onclick="alert('valla panikkum poda😘 ')">Connect</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 faheem ahmad | All Rights Reserved
+</footer>
+
+<script>
+    const text = "my first website";
+    let i = 0;
+
+    function typingEffect() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typingEffect, 50);
+        }
+    }
+
+    typingEffect();
+</script>
+
+</body>
+</html>
